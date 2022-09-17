@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+ 
+ int main()
+ {
+    int category;
+    int a, b, c;
+    cout << "Select a category: (1)Brass (2)Woodwind (3)Percussion" << endl;
+cin >> category;
+switch (category)
+{
+    case 1:
+    cout << "Select an instrument: (1)Trumpet (2)Trombone" << endl; //Putting switches inside other switch statements to change the integer.
+    cin >> a;
+        switch (a)
+    {
+        case 1:
+        cout << "Your instrument will be $350." << endl;
+        return 0;
+        break;
+        case 2:
+        cout << "Your instrument will be $400." << endl;
+        return 0;
+        break;
+        default:
+    cout << "Please enter a valid input." << endl;
+return 0;
+    break;
+    }
+
+    case 2:
+    cout << "Select an instrument: (1)Flute (2)Saxophone" << endl;
+    cin >> b;
+    switch (b)
+
+    {
+        case 1:
+        cout << "Your instrument will be $325." << endl;
+        return 0;
+        break;
+        case 2:
+        cout << "Your instrument will be $425." << endl;
+        return 0;
+        break;
+        default:
+    cout << "Please enter a valid input." << endl;
+return 0;
+    break;
+    }
+
+    case 3:
+    cout << "Select an instrument: (1)Snare Drum (2)Cymbals" << endl;
+    cin >> c;
+    switch (c)
+     {
+        case 1:
+        cout << "Your instrument will be $275." << endl;
+        return 0;
+        break;
+        case 2:
+        cout << "Your instrument will be $200." << endl;
+        return 0;
+        break;
+        default:
+    cout << "Please enter a valid input." << endl;
+return 0;
+    break;
+     }
+    
+default:
+    cout << "Please enter a valid input." << endl;
+return 0;
+    break; //If all else isn't 1-3, it has an error.
+}
+
+return 0;
+ }
